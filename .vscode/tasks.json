@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "dart build",
+			"command": "dart compile exe bin/dart_gql.dart",
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": false
+		}
+	]
+}
