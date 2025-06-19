@@ -1,5 +1,4 @@
 import 'package:dart_gql/main.dart';
-import 'package:graphql/client.dart';
 import 'package:test/test.dart';
 void main(){
 
