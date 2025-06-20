@@ -1,7 +1,19 @@
 import 'package:dart_gql/dart_gql.dart';
 import 'package:http/http.dart';
 import 'package:graphql/client.dart';
-export 'package:graphql/client.dart';
+export 'package:graphql/client.dart'
+  show 
+    GraphQLClient,
+    GraphQLCache,
+    HttpLink,
+    WebSocketLink,
+    Link,
+    DefaultPolicies,
+    Policies,
+    FetchPolicy,
+    CacheRereadPolicy,
+    GraphQLProtocol,
+    SocketClientConfig;
 class DartGql {
   static const String version = '0.1.0';
   static const String name = 'dart_gql';
