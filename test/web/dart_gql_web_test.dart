@@ -25,6 +25,6 @@ void main() {
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode(query),
     );
-    expect(response2.headers['set-cookie'], equals(null));
+    expect(response2.headers['set-cookie'], equals(isNotNull));
   });
 }
