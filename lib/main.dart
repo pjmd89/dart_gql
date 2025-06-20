@@ -16,6 +16,7 @@ export 'package:graphql/client.dart'
     QueryOptions,
     gql,
     SocketClientConfig;
+
 class DartGql {
   static const String version = '0.1.0';
   static const String name = 'dart_gql';
