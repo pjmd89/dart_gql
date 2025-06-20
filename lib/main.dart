@@ -71,7 +71,7 @@ class DartGql {
       cache: GraphQLCache(),
     );
   }
-  Future<dynamic> query({required QueryOptions query}) async {
+  Future<dynamic> query(QueryOptions query) async {
     final result = await _gqlClient.query(
       query,
     );
