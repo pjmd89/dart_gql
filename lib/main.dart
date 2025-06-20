@@ -13,6 +13,7 @@ export 'package:graphql/client.dart'
     FetchPolicy,
     CacheRereadPolicy,
     GraphQLProtocol,
+    QueryOptions,
     SocketClientConfig;
 class DartGql {
   static const String version = '0.1.0';
