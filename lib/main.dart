@@ -33,8 +33,6 @@ class DartGql {
     cacheReread: CacheRereadPolicy.ignoreAll,
   );
 
-  GraphQLClient get client => _gqlClient;
-
   DartGql({required String apiURL, String? wsURL, bool insecure = false}) {
     _apiURL = apiURL;
     _wsURL = wsURL;
@@ -72,5 +70,11 @@ class DartGql {
       ),
       cache: GraphQLCache(),
     );
+  }
+  Future<dynamic> query({required QueryOptions query}) async {
+    final result = await _gqlClient.query(
+      query,
+    );
+    return result;
   }
 }
