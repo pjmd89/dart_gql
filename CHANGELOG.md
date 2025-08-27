@@ -6,3 +6,9 @@
 - GraphQL queries, mutations, subscriptions.
 - Cookie management.
 - WebSocket and HTTP support.
+
+## 0.1.1
+- Minor changes in documentation and examples.
+
+## 0.1.2
+- Minor changes in documentation and examples.
