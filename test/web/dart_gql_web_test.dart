@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:test/test.dart';
-import 'package:dart_gql/dart_gql.dart';
+import 'package:dart_gql/main.dart';
 
 void main() {
   test('El cliente almacena y reenvía cookies usando httpbingo', () async {

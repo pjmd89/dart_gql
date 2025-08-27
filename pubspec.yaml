@@ -1,12 +1,13 @@
 name: dart_gql
-description: A sample command-line application.
-version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+description: A Dart/Flutter plugin for GraphQL operations.
+version: 0.1.0
+maintainers:
+  - Pablo Munoz <pjmd89@gmail.com>
+homepage: https://github.com/pjmd89/dart_gql
 
 environment:
   sdk: ^3.7.2
 
-# Add regular dependencies here.
 dependencies:
   http: ^1.2.1
   graphql: ^5.2.1

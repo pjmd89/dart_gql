@@ -1,4 +1,4 @@
-import 'package:dart_gql/main.dart';
+import 'package:dart_gql/dart_gql.dart';
 import 'package:test/test.dart';
 void main(){
 
@@ -12,7 +12,7 @@ void main(){
   });
 
   test('Query cookies returns data or error', () async {
-    final result = await dartGql.client.query(
+    final result = await dartGql.query(
       QueryOptions(
         document: gql('''
           query GetTypeName {
