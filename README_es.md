@@ -20,7 +20,7 @@ Agrega la dependencia en tu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-	dart_gql: ^0.1.2
+	dart_gql: ^0.2.0
 ```
 
 Luego ejecuta:

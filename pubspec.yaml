@@ -1,6 +1,6 @@
 name: dart_gql
 description: A Dart/Flutter plugin for GraphQL operations.
-version: 0.1.2
+version: 0.2.0
 maintainers:
   - Pablo Munoz <pjmd89@gmail.com>
 homepage: https://github.com/pjmd89/dart_gql
