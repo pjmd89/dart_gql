@@ -2,6 +2,8 @@
 
 **dart_gql** es una librería multiplataforma para Dart y Flutter que facilita la integración con servidores GraphQL, soportando HTTP, WebSocket, manejo avanzado de cookies y configuración flexible del cliente.
 
+**[English version](https://github.com/pjmd89/dart_gql/blob/main/README.md)**
+
 ## Características
 
 - Compatible con Dart puro y Flutter.
