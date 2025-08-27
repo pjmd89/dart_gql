@@ -10,5 +10,5 @@
 ## 0.1.1
 - Minor changes in documentation and examples.
 
-## 0.1.2
-- Minor changes in documentation and examples.
+## 0.2.0
+- Add support to mutations and subscriptions.

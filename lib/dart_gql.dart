@@ -73,4 +73,14 @@ class DartGql {
     );
     return result;
   }
+
+  Future<dynamic> mutate(MutationOptions mutation) async {
+    final result = await _gqlClient.mutate(
+      mutation,
+    );
+    return result;
+  }
+  Stream<QueryResult> subscribe(SubscriptionOptions options) {
+    return _gqlClient.subscribe(options);
+  }
 }

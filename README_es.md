@@ -47,6 +47,7 @@ final dartGql = DartGql(
 );
 ```
 
+
 ### 3. Realiza una consulta
 
 ```dart
@@ -64,6 +65,45 @@ if (result.hasException) {
 	print('Datos: ${result.data}');
 }
 ```
+
+### 4. Realiza una mutación
+
+```dart
+final mutationOptions = MutationOptions(
+	document: gql('mutation { addUser(name: "Juan") { id name } }'),
+);
+
+final mutationResult = await dartGql.mutate(mutationOptions);
+if (mutationResult.hasException) {
+	print('Error en mutación: ${mutationResult.exception}');
+} else {
+	print('Datos de mutación: ${mutationResult.data}');
+}
+```
+
+### 5. Suscríbete a actualizaciones en tiempo real
+
+```dart
+final subscriptionOptions = SubscriptionOptions(
+	document: gql('subscription { mensajeNuevo { id texto } }'),
+);
+
+final subscription = dartGql.subscribe(subscriptionOptions).listen((result) {
+	if (result.hasException) {
+		print('Error en suscripción: ${result.exception}');
+	} else {
+		print('Datos de suscripción: ${result.data}');
+	}
+});
+```
+
+Para cancelar la suscripción y cerrar la conexión:
+
+```dart
+subscription.cancel();
+```
+
+> **Nota:** La suscripción permanece activa y recibe datos hasta que llames a `subscription.cancel()` o el servidor cierre la conexión.
 
 ### 4. Manejo de cookies
 
