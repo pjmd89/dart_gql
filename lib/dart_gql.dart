@@ -14,6 +14,7 @@ export 'package:graphql/client.dart'
     CacheRereadPolicy,
     GraphQLProtocol,
     QueryOptions,
+    QueryResult,
     MutationOptions,
     SubscriptionOptions,
     gql,
