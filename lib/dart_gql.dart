@@ -14,6 +14,8 @@ export 'package:graphql/client.dart'
     CacheRereadPolicy,
     GraphQLProtocol,
     QueryOptions,
+    MutationOptions,
+    SubscriptionOptions,
     gql,
     SocketClientConfig;
 
@@ -67,14 +69,14 @@ class DartGql {
       cache: GraphQLCache(),
     );
   }
-  Future<dynamic> query(QueryOptions query) async {
+  Future<QueryResult> query(QueryOptions query) async {
     final result = await _gqlClient.query(
       query,
     );
     return result;
   }
 
-  Future<dynamic> mutate(MutationOptions mutation) async {
+  Future<QueryResult> mutate(MutationOptions mutation) async {
     final result = await _gqlClient.mutate(
       mutation,
     );
